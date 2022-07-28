@@ -7,7 +7,7 @@ const styles = {
   width: '500px',
   border: '1px solid #eee',
   padding: '25px',
-  margin: '20px'
+  margin: '20px',
 };
 
 const MultiEmailInput = () => {
@@ -17,7 +17,7 @@ const MultiEmailInput = () => {
       <ReactMultiEmail
         placeholder="Input your Email Address"
         emails={emails}
-        onChange={(_emails) => setEmails(_emails)}
+        onChange={_emails => setEmails(_emails)}
         getLabel={(email, index, removeEmail) => {
           return (
             <div data-tag key={index}>
